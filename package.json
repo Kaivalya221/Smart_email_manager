@@ -1,0 +1,14 @@
+{
+  "name": "smart-email-manager",
+  "version": "1.0.0",
+  "description": "Smart Email Management System with Gmail OAuth and AI NLP",
+  "scripts": {
+    "install:all": "cd backend && npm install && cd ../frontend && npm install",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run build -- --watch",
+    "dev": "npm run install:all && cd frontend && npm run build && cd ../backend && npm start",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && node server.js"
+  },
+  "private": true
+}
